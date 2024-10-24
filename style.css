@@ -1,0 +1,486 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ECECEC;
+}
+main {
+  width: 100%;
+  /* height: 100vh; */
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+  0deg,rgba(34, 193, 195, 1) 0%,rgba(253, 45, 168, 0.8547794117647058) 100%
+    );
+  }
+  /* CURSOR STARTS HERE  */
+#cursor {
+  height: 0.7vw;
+  width: 0.7vw;
+  background: linear-gradient(
+    red 0%,
+    orange 10%,
+    orange 30%,
+    yellow 50%,
+    yellow 70%,
+    green 90%,
+    green 100%
+  );
+  border-radius: 100%;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ /* CURSOR STARTS HERE  */
+   /* BACK TO TOP STARTS HERE */
+.backtotop {
+  z-index: 2;
+  position: fixed;
+  right: 4vw;
+  bottom: 80px;
+}
+.backtotop .scroll {
+  z-index: 1;
+  position: fixed;
+  font-size: 14px;
+  background-color: yellow;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  color: black;
+  overflow: hidden;
+}
+.backtotop a {
+  text-decoration: none;
+  outline: none;
+}
+.backtotop .scroll i {
+  left: 50%;
+  position: absolute;
+}
+.backtotop .scroll i:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.backtotop .scroll i:nth-child(2) {
+  top: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+    /* BACK TO TOP END HERE  */
+    /* NAVBAR START HERE  */
+main .navbar{
+  position:sticky;
+  top:0;
+  z-index: 2;
+  }
+.navbar {
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+}
+.navbar-brand {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  box-shadow: 0px 0px 10px #eee;
+  border-radius: 15px;
+}
+.dropdown-menu{
+  background-color: black;
+}
+.dropdown-menu .nav-item:hover .nav-link{
+  color: black;
+}
+.nav-item{
+  z-index: 2;
+}
+  /* NAVBAR ENDS HERE */
+  /* SLIDER STARTS HERE */
+.carousel-inner .carousel-caption {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%);
+  font-size: 1.2em;
+  line-height: 30px;
+}
+.carousel-indicators .dot {
+  width:2.5vw;
+  height: 0.5vh;
+  border-radius: 50%;
+  background-color: lightblue;
+  border: 1px solid black;
+  padding: 3px;
+}
+.carousel-inner .carousel-item .carousel-caption h1 span {
+  color: red;
+}
+.c-img {
+  width: 100%;
+  height: 500px;
+}
+.contact-btn {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: darkorange;
+  margin: 0 auto;
+  border: none;
+  border-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+.contact-btn:hover .scroll1 {
+  color: white;
+}
+.contact-btn:hover {
+  background-color: transparent;
+  border: 2px solid gray;
+}
+.contact-btn .scroll1 {
+  z-index: 2;
+  width: 150px;
+  display: inline-block;
+  height: 30px;
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+.contact-btn i {
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+}
+.contact-btn a {
+  text-decoration: none;
+  outline: none;
+}
+.contact-btn .scroll1 span {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.contact-btn .scroll1 span:nth-child(1) {
+  top: 0%;
+  transition: 0.3s;
+}
+.contact-btn .scroll1 span:nth-child(2) {
+  top: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+  /* SLIDER ENDS HERE */
+  /* CARD STARTS HERE */
+.card-contact .card {
+  background-color:#E3E4E6;
+  color:black;
+}
+.img-thumbnail{
+  border:none;
+  outline: none;
+}
+.card-contact .card img{
+  border: none;
+}
+/* CARD ENDS HERE  */
+/* ARTICLE STARTS HERE  */
+.card-center {
+  font-size: 3rem;
+  margin: 4vw;
+  cursor: pointer;
+  color: gray; 
+}
+.card-center span:hover {
+  transition: 0.1s ;
+   text-shadow: -2px -2px 10px black;
+}
+.about-guruji img{
+  width: 100%;
+  max-height: 40vw; 
+}
+/* ARTICLE ENDS HERE  */
+/* OurSERVICES STARTS HERE  */
+section .card-img {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%,rgba(78, 9, 121, 1) 100%,rgba(0, 212, 255, 1) 100%
+  );
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+.card-img img {
+  width: 10vw;
+  height:10vw ;
+}
+section .card-img:hover {
+  box-shadow: 0px 0px 20px black;
+}
+/* OURSERVICES ENDS HERE  */
+/* FOOTER STARTS HERE  */
+footer{
+  background-color:#28231E;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+.footer-1,.footer-2,.footer-3,.footer-4{
+  margin-top: 10px;
+}
+footer .footer-2 .quick-links i{
+  font-size: 20px;
+  color:white ;
+  align-items: center;
+}
+footer .follow-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+footer .footer-1 img{
+  background-color:#FF5100 ;
+  border: none;
+}
+footer .footer-3 p{
+  line-height: 15px;
+  color: white;
+}
+footer .copyright{
+   padding-bottom: 30px;
+  font-size: 16px;
+}
+.quick-links .quick-links1{
+  z-index:2;
+  width: 40px;
+  height: 34px;
+  /* padding: 1px; */
+  /* overflow: hidden; */
+  position: relative;
+}
+.quick-links1 a{
+  text-align: center;
+  display: inline-block;
+}
+.quick-links1 i{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.quick-links1 i:nth-child(1){
+  top:50%;
+   opacity: 1;
+  transition: 0.8s;
+}
+.quick-links1 i:nth-child(2){
+  top: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+/* FOOTER ENDS HERE  */
+#loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(192, 195, 199);
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loader h1 {
+  font-size: 100px;
+  font-family: monospace;
+}
+/* MEDIA QUARY STARTS HERE  */
+@media screen and (max-width: 600px) {
+.carousel-inner .carousel-caption {
+  top: 10vw;
+  width: 100%;
+  left: 0vw;
+  transform: translate(0%, 0%);
+  line-height: 35px;
+}
+#cursor {
+  display: none;
+}
+.circle1 {
+  display: none;
+}
+.card-img img {
+min-width: 20vw;
+min-height:20vw ;
+object-fit: cover ;
+}
+footer{
+  text-align: center;
+}
+.about-guruji img, .Service-section img{
+  min-height: 60vw;
+}
+ 
+}
+@media screen and (max-width: 800px){
+  footer{
+    text-align: center;
+  }
+  .other-services h4{
+    font-size: 16px;
+    padding: 40px;
+  }
+  .Service-section img{
+    width: 100%;
+
+    max-height: 50vw;
+  }
+  .Service-section img{
+    max-height: 30px;
+  }
+}
+@media screen and (max-width: 1080px){
+  footer{
+    text-align: center;
+  }
+  .other-services h4{
+    font-size: 16px;
+    padding: 40px;
+  }
+  .Service-section img{
+    max-height: 30px;
+  }
+
+}
+/* MEDIA QUARY ENDS HERE  */
+.card-contact {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(146, 15, 198, 0.8295693277310925) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 2vw 0;
+  position: relative;
+}
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circle1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.circle img {
+  z-index: 99;
+}
+.circle1 {
+  margin-left: 80vw;
+}
+.card:hover {
+  box-shadow: 0 0 20px black;
+}
+
+
+section {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 97%
+  );
+  padding: 10px;
+  text-align: center;
+}
+section img {
+  margin: 0 auto;
+}
+
+
+/* contact details */
+.contact-card i {
+  color: rebeccapurple;
+  background: none;
+  font-size: 2em;
+}
+.contact-card h4 {
+  font-weight: 1000;
+}
+.contact-us{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+iframe{
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 1em;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-menu:hover .nav-item{
+  display: block;
+}
+    /* Service start here */
+.our-service h1{
+  font-size:8vw;
+  text-shadow: -5px -5px 20px black;
+  color: yellowgreen;
+}
+
+.our-service button{
+  font-size:1.5vw;
+  border-radius: 30px;
+  padding: 0.4em 0.8em;
+  border: none;
+  outline: none;
+  background-color: #FF5100;
+  color: white;
+}
+.Service-section img{
+  width: 100%;
+  object-fit: fill;
+  max-height:30vw;
+}
+.other-services h4{
+  color: white;
+    background-color: red;
+    padding: 0.5em ;
+    border-radius: 10px;
+}
+    /* Service ends here */
